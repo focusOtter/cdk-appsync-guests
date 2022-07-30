@@ -1,0 +1,6 @@
+{
+  "items": $utils.toJson($ctx.result.items)
+  #if( ${ctx.result.nextToken} )
+      ,"nextToken": $util.toJson($ctx.result.nextToken)
+  #end
+}
