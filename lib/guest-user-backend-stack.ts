@@ -80,6 +80,10 @@ export class GuestUserBackendStack extends Stack {
 			value: api.apiId,
 		})
 
+		new CfnOutput(this, 'GraphQLURL', {
+			value: api.graphqlUrl,
+		})
+
 		new CfnOutput(this, 'GraphQLAPIKey', {
 			value: api.apiKey || '',
 		})
