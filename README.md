@@ -1,6 +1,6 @@
 # Welcome to your CDK TypeScript project
 
-(checkout the branches for the IAM permission setup)
+(checkout the branches for the different setups)
 This is a blank project for CDK development with TypeScript.
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
