@@ -79,6 +79,9 @@ export class GuestUserBackendStack extends Stack {
 		new CfnOutput(this, 'GraphQLAPIID', {
 			value: api.apiId,
 		})
+		new CfnOutput(this, 'GraphQLURL', {
+			value: api.graphqlUrl,
+		})
 
 		new CfnOutput(this, 'GraphQLAPIKey', {
 			value: api.apiKey || '',
