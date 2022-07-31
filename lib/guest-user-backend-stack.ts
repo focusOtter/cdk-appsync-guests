@@ -30,16 +30,16 @@ export class GuestUserBackendStack extends Stack {
 			partitionKey: { name: 'userId', type: AttributeType.STRING },
 		})
 
-		const api = new GraphqlApi(this, 'Book API', {
-			name: 'Book API',
+		const api = new GraphqlApi(this, 'User API', {
+			name: 'User API',
 			schema: Schema.fromAsset(path.join(__dirname, 'schema.graphql')),
 			authorizationConfig: {
 				defaultAuthorization: {
 					authorizationType: AuthorizationType.API_KEY,
 					apiKeyConfig: {
-						description: 'public scan for books',
+						description: 'public scan for users',
 						expires: Expiration.after(Duration.days(30)),
-						name: 'Public Book Scan Token',
+						name: 'API Key for demo',
 					},
 				},
 			},
