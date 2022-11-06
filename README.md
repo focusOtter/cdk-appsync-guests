@@ -4,6 +4,19 @@
 
 This repo walks through the steps needed to get setup an AppSync API that is protected with an API Key.
 
+```ts
+// valid, but simplified
+const api = new GraphqlApi(this, 'User API', {
+	name: 'User API',
+	schema: Schema.fromAsset(path.join(__dirname, 'schema.graphql')),
+	authorizationConfig: {
+		defaultAuthorization: {
+			authorizationType: AuthorizationType.API_KEY,
+		},
+	},
+})
+```
+
 ![architecture diagram](./readmeImages/archDiagram.png)
 
 # Content Channels
@@ -11,6 +24,8 @@ This repo walks through the steps needed to get setup an AppSync API that is pro
 - AWS blog post: [Secure AWS AppSync with API Keys using the AWS CDK](https://aws.amazon.com/blogs/mobile/secure-aws-appsync-with-api-keys-using-the-aws-cdk/)
 
 ## Project Overview
+
+The core of the appl
 
 The deployed project is meant to work with a frontend (see link to frontend repo below), thereby creating a fullstack application. In addition to an AppSync API, a DynamoDB table is created to hold `User` data and a Lambda function is created to populate the table on a schedule.
 
