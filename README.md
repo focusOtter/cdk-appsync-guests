@@ -22,6 +22,10 @@ const api = new GraphqlApi(this, 'User API', {
 # Content Channels
 
 - AWS blog post: [Secure AWS AppSync with API Keys using the AWS CDK](https://aws.amazon.com/blogs/mobile/secure-aws-appsync-with-api-keys-using-the-aws-cdk/)
+- Focus Otter blog post: [The case for fullstack teams having a dedicated frontend and backend](https://blog.focusotter.com/the-case-for-fullstack-teams-having-dedicated-frontends-and-backends)
+- Focus Otter YouTube Video: [The complete beginners guide to creating fullstack apps using the AWS CDK](https://www.youtube.com/watch?v=GBPDeic5fPE&t=8s)
+- TikTok: [Understanding the different parts of AWS Amplify](https://www.tiktok.com/@focusotter/video/7163939491441347882)
+- Copy/paste snip pic: [link to view](https://snappify.io/view/30dd5f9c-3fea-42b7-a293-999b3828f1b7)
 
 ## Project Overview
 
